@@ -54,6 +54,13 @@ app.get('/bad', (req, res) => {
   })
 })
 
+app.get('/product', (req, res) => {
+  res.render('product.hbs', {
+    pageTitle: 'Product Page',
+    pageContent: 'Product list'
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server is listening on port: ${port}`)
 })
